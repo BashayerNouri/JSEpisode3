@@ -4,8 +4,12 @@
  * - Accepts an array
  * - Logs every element of the array
  ************************************/
+
 const logger = function(array) {
   // Your code here
+  let array = ['Kuwait', 'London', 'New York', 'Perth', 'West Lafayette'];
+  array.forEach(city => console.log(city));
+
 };
 
 /*************************************
@@ -21,6 +25,7 @@ const logger = function(array) {
  ************************************/
 const toCelsius = function(temperatures) {
   // Your code here
+  return temperatures.map(temperature => (temperature - 32 ) * (5/9));
 };
 
 /**************************************
@@ -33,6 +38,8 @@ const toCelsius = function(temperatures) {
  ***************************************/
 const hottestDays = function(temperatures, threshhold) {
   // Your code here
+  return temperatures.filter(temp => temp > (threshhold));
+  
 };
 
 /******************************************
